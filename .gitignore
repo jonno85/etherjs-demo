@@ -1,0 +1,12 @@
+.env
+artifacts
+cache
+node_modules
+
+ignition/deployments
+test-ledger
+
+coverage.json
+
+yarn-error.log
+

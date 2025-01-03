@@ -1,0 +1,32 @@
+{
+  "name": "hard-hat-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jonathan filippini",
+  "license": "MIT",
+  "scripts": {
+    "load-env": "./load-env.sh",
+    "deploy-local": "yarn load-env && npx hardhat ignition deploy ./ignition/modules/Token.js --network localhost",
+    "deploy-testnet": "yarn load-env && npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-ignition": "^0.15.10",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.10",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.13",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "chai": "4",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.18",
+    "hardhat-gas-reporter": "^2.2.2",
+    "solidity-coverage": "^0.8.14",
+    "typechain": "^8.3.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
